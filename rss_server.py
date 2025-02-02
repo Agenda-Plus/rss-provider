@@ -16,9 +16,11 @@ class RSSServer:
         # Initialize Redis connection
         try:
             self.redis_client = redis.Redis(
+                username=os.getenv('REDIS_USER'),
+                password=os.getenv('REDIS_PASSWORD'),
                 host=os.getenv('REDIS_HOST', 'localhost'),
                 port=int(os.getenv('REDIS_PORT', 6379)),
-                db=int(os.getenv('REDIS_DB', 0))
+                db=int(os.getenv('REDIS_DB', 0)) 
             )
             # Test the connection
             self.redis_client.ping()
