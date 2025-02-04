@@ -23,9 +23,7 @@ RUN useradd -m appuser && chown -R appuser:appuser /app
 USER appuser
 
 # Set environment variables
-ENV REDIS_HOST=redis
-ENV REDIS_PORT=6379
-ENV REDIS_DB=0
+
 
 # Command to run the application
 CMD ["python", "rss_server.py"] 
