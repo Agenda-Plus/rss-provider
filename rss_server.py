@@ -6,10 +6,10 @@ from email.mime.text import MIMEText
 from datetime import datetime
 import json
 import os
-from dotenv import load_dotenv
+#from dotenv import load_dotenv
 
 # Load environment variables
-load_dotenv()
+#load_dotenv()
 
 class RSSServer:
     def __init__(self):
