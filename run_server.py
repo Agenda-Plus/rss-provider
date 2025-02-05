@@ -4,7 +4,7 @@ import time
 def main():
     try:
         rss_server = RSSServer()
-        
+        print("RSS Server initialized")
         # Example: Add some RSS sources
         #rss_server.add_source("https://news.ycombinator.com/rss", "Hacker News")
         #rss_server.add_source("https://www.reddit.com/r/programming/.rss", "Reddit Programming")
