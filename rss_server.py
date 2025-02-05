@@ -10,14 +10,15 @@ from dotenv import load_dotenv
 
 # Load environment variables
 load_dotenv()
-print(os.getenv('REDIS_USER'))
-print(os.getenv('REDIS_PASSWORD'))
-print(os.getenv('REDIS_HOST'))
-print(os.getenv('REDIS_PORT'))
-print(os.getenv('REDIS_DB'))
+ 
 
 class RSSServer:
     def __init__(self):
+        print(os.getenv('REDIS_USER'))
+        print(os.getenv('REDIS_PASSWORD'))
+        print(os.getenv('REDIS_HOST'))
+        print(os.getenv('REDIS_PORT'))
+        print(os.getenv('REDIS_DB'))
         # Initialize Redis connection
         try:
             self.redis_client = redis.Redis(
