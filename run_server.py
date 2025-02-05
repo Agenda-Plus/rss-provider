@@ -3,6 +3,7 @@ import time
 
 def main():
     try:
+        print("Starting RSS Server")
         rss_server = RSSServer()
         print("RSS Server initialized")
         # Example: Add some RSS sources
