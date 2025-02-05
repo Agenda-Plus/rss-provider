@@ -26,4 +26,4 @@ COPY . .
 
 
 # Command to run the application
-CMD ["python", "rss_server.py"] 
+CMD ["python", "run_server.py"] 
