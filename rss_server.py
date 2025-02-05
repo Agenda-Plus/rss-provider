@@ -27,6 +27,7 @@ class RSSServer:
                 port=int(os.getenv('REDIS_PORT', 6379)),
                 db=int(os.getenv('REDIS_DB', 0)) 
             )
+
             # Test the connection
             self.redis_client.ping()
             print("Successfully connected to Redis")
@@ -40,6 +41,7 @@ class RSSServer:
         
     def add_source(self, url, name):
         """Add new RSS source"""
+        print(f"Attempting to add source: {name} ({url})")
         try:
             print(f"Attempting to add source: {name} ({url})")
             feed = feedparser.parse(url)
