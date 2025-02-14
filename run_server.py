@@ -8,7 +8,7 @@ def main():
         print("RSS Server initialized")
         # Example: Add some RSS sources
         #rss_server.add_source("https://news.ycombinator.com/rss", "Hacker News")
-        #rss_server.add_source("https://www.reddit.com/r/programming/.rss", "Reddit Programming")
+        rss_server.add_source("https://unchainedcrypto.com/feed/", "Unchainedcrypto")
         rss_server.add_source("https://rss.panewslab.com/en/gtimg/rss", "PANews")
     
         while True: 
